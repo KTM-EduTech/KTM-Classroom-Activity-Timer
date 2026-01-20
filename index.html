@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activity Timer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- Timer Area -->
+    <div class="timer-display" id="timer-display">
+      <div class="box min-box">
+        <div class="number" id="minutes">1</div>
+        <div class="unit">min</div>
+      </div>
+      <div class="box sec-box">
+        <div class="number" id="seconds">00</div>
+        <div class="unit">sec</div>
+      </div>
+    </div>
+
+    <div class="finished-box" id="finished-box">
+      Finished
+    </div>
+
+    <!-- Controls -->
+    <div class="controls">
+      <!-- Selection Panel -->
+      <div class="options" id="options-panel">
+        <label class="option selected" data-seconds="60">
+          <div class="radio"></div>
+          <span>1 min</span>
+        </label>
+        <label class="option" data-seconds="30">
+          <div class="radio"></div>
+          <span>30 s</span>
+        </label>
+        <label class="option" data-seconds="120">
+          <div class="radio"></div>
+          <span>2 min</span>
+        </label>
+        <label class="option" data-seconds="180">
+          <div class="radio"></div>
+          <span>3 min</span>
+        </label>
+        <label class="option" data-seconds="300">
+          <div class="radio"></div>
+          <span>5 min</span>
+        </label>
+        <label class="option" data-seconds="600">
+          <div class="radio"></div>
+          <span>10 min</span>
+        </label>
+        <label class="option" data-seconds="900">
+          <div class="radio"></div>
+          <span>15 min</span>
+        </label>
+        <label class="option" data-seconds="1200">
+          <div class="radio"></div>
+          <span>20 min</span>
+        </label>
+
+        <button id="go-btn">▶ Go</button>
+      </div>
+
+      <!-- Running / Finished Panel -->
+      <div class="action-btns" id="action-panel">
+        <button class="action-btn" id="pause-btn">‖ Pause</button>
+        <button class="action-btn" id="reset-btn">× Reset</button>
+      </div>
+    </div>
+
+    <div class="accuracy" id="accuracy">*</div>
+  </div>
+
+  <footer>
+    <span>MULTIPURPOSE ACTIVITY TIMER</span>
+    <img src="https://assets.unlayer.com/projects/0/1725789113852-KTM%20EduTech%20(2)%20(1).png" alt="KTM EduTech" class="logo">
+    <span>by Kyd Tantano Masong</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
